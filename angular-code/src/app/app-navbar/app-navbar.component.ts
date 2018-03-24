@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CommsService} from '../services/comms/comms.service';
 
 @Component({
   selector: 'app-navbar',
@@ -7,9 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppNavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private comms: CommsService) { }
 
-  ngOnInit() {
+  ngOnInit() { this.comms.heartbeat
   }
-
 }

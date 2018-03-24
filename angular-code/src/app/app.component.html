@@ -1,9 +1,40 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<app-navbar></app-navbar> 
+<app-navbar></app-navbar>
+
 <div class="container">
-  <div class="starter-template">
-    <h1>Particle Photon Data</h1>
-    <h3>Latest Recording</h3>
+  <div class="card border-dark">
+    <div class="card-header">
+      Echo Command
+    </div>
+    <div class="card-body">
+      <h5 class="card-title">Send Echo</h5>
+      <p class="card-text">Enter the message you want to send to the controller. The controller will bounce it back to the interface</p>
+      <div class="input-group">
+        <input type="text" [(ngModel)]="newEcho" name="newEcho"  class="form-control" placeholder="Enter message to echo" aria-label="Enter message to echo" aria-describedby="basic-addon2">
+        <div class="input-group-append">
+          <button class="btn btn-outline-secondary" type="button" (click)="sendEcho()">Send</button>
+        </div>
+      </div>
+      <hr>
+      <div *ngIf="(echoMessages.length > 0)">
+        <h5 class="card-title">Recieved Echoes</h5>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col mb-3">#</th>
+              <th scope="col mb-9">Response</th>
+            </tr>
+          </thead>
+          <tbody *ngFor="let echo of echoMessages; let i = index;">
+            <tr >
+              <th scope="row">{{i+1}}</th>
+              <td>{{echo}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
   </div>
 </div>
 

@@ -1,20 +1,25 @@
+
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-  <a class="navbar-brand" href="https://particle.io/">
-    <img src="https://labby.co.uk/wp-content/uploads/2017/02/particle.png" width="50" height="50">Particle
-  </a>
+    <div class="container">
+      <a class="navbar-brand" href="http://saphi.com.au/">
+        <img src="../../assets/img/saphi-logo.png" width="180" height="50">
+      </a>
 
-  <button class="navbar-toggler" type="button" data-toggle="collapse"
-    data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-    aria-expanded="false" aria-label="Toggle Navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-    </ul>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+        </ul>
+        <form *ngIf="comms.heartbeat | async as heartbeat" class="form-inline my-2 my-lg-0">
+          <button type="button" class="btn btn-light">
+            Heartbeat <span class="badge badge-dark">{{heartbeat | number}}</span>
+          </button>
+        </form>
+      </div>
   </div>
-
 </nav>
