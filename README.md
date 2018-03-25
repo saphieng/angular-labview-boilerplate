@@ -18,7 +18,7 @@ This will generate a **dist** folder.
 
 ## Deploy Interface to Raspberry Pi
 To serve the angular interface on the Raspberry Pi follow these steps:
-1. Connect to you Raspberry Pi via SSH (Make sure it has internet)
+1. Connect to you Raspberry Pi via SSH (Make sure it has internet) and setup the pi as an [Access Point](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md) 
 2. Install the APache Web server `sudo apt-get install apache2 -y`
 2. Using [WinSCP](https://winscp.net/eng/download.php), log into the Raspberry Pi using the SCP protocol. 
 Default details are **pi** for username and **raspberry** for password. Under advanced settings change the **Environment/SCP/Shell** Shell setting to **sudo su -**.
