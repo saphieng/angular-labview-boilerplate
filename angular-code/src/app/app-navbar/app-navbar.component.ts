@@ -7,8 +7,12 @@ import {CommsService} from '../services/comms/comms.service';
   styleUrls: ['./app-navbar.component.css']
 })
 export class AppNavbarComponent implements OnInit {
-
+  show:boolean = false;
   constructor(private comms: CommsService) { }
+
+  toggleCollapse() {
+    this.show = !this.show
+  }
 
   ngOnInit() { this.comms.heartbeat
   }

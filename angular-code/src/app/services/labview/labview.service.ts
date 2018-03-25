@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Observable, Subject } from 'rxjs/Rx';
 import { WebsocketService } from '../websocket/websocket.service';
-
-const SERVER_URL = 'ws://192.168.0.19:6139';
+//The static ip configured for the raspberry pi
+const SERVER_URL = 'ws://192.168.4.1:6139';
 
 export class Message {
   Command: string;
