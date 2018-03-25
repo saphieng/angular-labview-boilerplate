@@ -18,7 +18,7 @@ This will generate a **dist** folder.
 
 ## Deploy Interface to Raspberry Pi
 To serve the angular interface on the Raspberry Pi follow these steps:
-1. Connect to you Raspberry Pi via SSH (Make sure it has internet)
+1. Connect to you Raspberry Pi via SSH (Make sure it has internet) and setup the pi as an [Access Point](https://www.raspberrypi.org/documentation/configuration/wireless/access-point.md) 
 2. Install the APache Web server `sudo apt-get install apache2 -y`
 2. Using [WinSCP](https://winscp.net/eng/download.php), log into the Raspberry Pi using the SCP protocol. 
 Default details are **pi** for username and **raspberry** for password. Under advanced settings change the **Environment/SCP/Shell** Shell setting to **sudo su -**.
@@ -33,3 +33,6 @@ Default details are **pi** for username and **raspberry** for password. Under ad
 
 ## Test Application
 If everything is running correctly open the Angular Interface in a web browser by going to the IP address of the device. Send a message using the *Echo* command. You will see that message displayed in the *Echo Return* box. If the LabVIEW code is communicating with the Angular front-end you will see the heart beat counter incrementing as well.
+
+## Server IP
+For the Angular Interface to communicate with the raspberry pi the server URL must be set to the IP address of the Raspberry Pi. This, by default, is **192.168.4.1** as this is what it gets set to in the Access Point tutorial. You can change the server URL inside the [labview.service.ts](https://github.com/saphieng/angular-labview-boilerplate/blob/master/angular-code/src/app/services/labview/labview.service.ts) file in the Angular Code.
