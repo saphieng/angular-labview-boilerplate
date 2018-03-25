@@ -1,6 +1,11 @@
 # angular-labview-boilerplate
 This project provides a starter template for a LabVIEW application with an Angular 5 front end. It's built to be deployed to a Raspberry Pi using the LabVIEW MakerHub LINX.
 
+The Angular Interface has a heartbeat indicator that allows quick verification of connection status. It also has an echo form that allows you to send a message to the LabVIEW code. The LabVIEW code then echoes that message back via websockets.
+
+![Angular Interface](https://github.com/saphieng/angular-labview-boilerplate/blob/master/angular-code/src/assets/img/interface-screenshot.png "Angular Interface")
+
+
 # Getting Started
 ## Run Angular Interface Locally
 Follow these steps to 
