@@ -35,4 +35,4 @@ Default details are **pi** for username and **raspberry** for password. Under ad
 If everything is running correctly open the Angular Interface in a web browser by going to the IP address of the device. Send a message using the *Echo* command. You will see that message displayed in the *Echo Return* box. If the LabVIEW code is communicating with the Angular front-end you will see the heart beat counter incrementing as well.
 
 ## Server IP
-For the Angular Interface to communicate with the raspberry pi the server URL must be set to the IP address of the Raspberry Pi. This, by default, is **192.168.4.1** as this is what it gets set to in the Access Point tutorial. You can change the server URL inside the **labview.service.ts** file in the Angular Code.
+For the Angular Interface to communicate with the raspberry pi the server URL must be set to the IP address of the Raspberry Pi. This, by default, is **192.168.4.1** as this is what it gets set to in the Access Point tutorial. You can change the server URL inside the [labview.service.ts](angular-labview-boilerplate/angular-code/src/app/services/labview/labview.service.ts) file in the Angular Code.
