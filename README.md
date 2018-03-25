@@ -8,10 +8,11 @@ The Angular Interface has a heartbeat indicator that allows quick verification o
 
 # Getting Started
 ## Quickstart
+*NOTE: the pre-built image is made for Raspberry Pi 3. Whilst it may work in other models it has not been tested*
 To get the application up and running you can download and flash a pre-built raspberry pi image. To complete the quickstart follow these steps:
 1. Download angular-labview Raspberry Pi image [here](https://saphi-my.sharepoint.com/:u:/g/personal/cameron_owen_saphi_com_au/EcwUKKlmLZ1NlUMCYXwJf4wBH0hMY0egjHg6uVvqFvFbzQ?e=HxBle9).
 2. Image an SD card using using your favourite method or follow the [Raspberry Pi Imaging Guide](https://www.raspberrypi.org/documentation/installation/installing-images/).
-3. Put image in Raspberry Pi and wait for it to boot up.
+3. Put imaged SD in Raspberry Pi and wait for it to boot up.
 4. Connect to the Raspberry SSID **rpi-control** and use the password **raspberrypi**
 5. Navigate to **192.168.4.1** in your web browser.
 
