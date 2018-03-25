@@ -17,7 +17,7 @@ To get the application up and running you can download and flash a pre-built ras
 4. Connect to the Raspberry SSID **rpi-control** and use the password **raspberrypi**
 5. Navigate to **192.168.4.1** in your web browser.
 
-You will see the interface. If all is working you should see the heartbeat indicator ticking over and any echoes sent should appear the recieved table.
+You will see the interface. If all is working you should see the heartbeat indicator ticking over and any echoes sent should appear in the recieved table.
 
 ## Run Angular Interface Locally
 Follow these steps to 
